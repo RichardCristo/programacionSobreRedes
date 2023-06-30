@@ -1,0 +1,10 @@
+<h1>BORRAR PAIS</h1>
+<form (ngSubmit)="deletePais()">
+    <input type="text" [(ngModel)]="idPais" placeholder="ingresar id del pais" name="provincia" required>
+    <br>
+    <button type="submit"> borrar </button>
+</form>
+<br>
+    <a routerLink = "/pais">volver a pais</a>
+    <br>
+    <a routerLink = "/home">volver a home</a>

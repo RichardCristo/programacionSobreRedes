@@ -1,0 +1,12 @@
+<h1>CANTIDAD DE LLUVIAS EN UN MES</h1>
+<form (ngSubmit)="getMetodo2()">
+<input type="text" [(ngModel)]="idPais" placeholder="ingresar id del pais" name="pais" required>
+<br>
+<input type="number" [(ngModel)]="mes" placeholder="ingresar el mes" name="pais" required>
+<button type="submit"> mandar </button>
+{{cantidad}}
+</form>
+<br>
+    <a routerLink = "/metodos">volver a metodos</a>
+    <br>
+    <a routerLink = "/home">volver a home</a>

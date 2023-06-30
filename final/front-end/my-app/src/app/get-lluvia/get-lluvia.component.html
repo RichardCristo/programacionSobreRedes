@@ -1,0 +1,24 @@
+<p>TUS LLUVIAS</p>
+<input type="text" [(ngModel)]="idPais" placeholder="ingresar id del pais" name="pais" required>
+<input type="text" [(ngModel)]="idProvincia" placeholder="ingresar id del provincia" name="pais" required>
+<table *ngIf=verTabla>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Milimetros de agua</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of lluviasLista; let i = index" [attr.data-index]="i">
+            <td>{{lluviasLista[i]._id}}</td>
+            <td>{{lluviasLista[i].mm_de_agua}}</td>
+            <td>{{lluviasLista[i].fecha}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click) = "getLluvia()">Mostrar lluvias</button>
+<br>
+    <a routerLink = "/lluvia">volver a lluvia</a>
+    <br>
+    <a routerLink = "/home">volver a home</a>

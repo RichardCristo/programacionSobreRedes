@@ -1,0 +1,11 @@
+<h1>POST PROVINCIA</h1>
+<form (ngSubmit)="postProvincia()">
+<input type="text" [(ngModel)]="idPais" placeholder="ingresar id del pais" name="pais" required>
+<br>
+<input type="text" [(ngModel)]="nombre" placeholder="ingresar nombre de la provincia" name="provincia" required>
+<button type="submit"> mandar </button>
+</form>
+<br>
+    <a routerLink = "/provincia">volver a provincia</a>
+    <br>
+    <a routerLink = "/home">volver a home</a>

@@ -1,0 +1,18 @@
+<h1>MODIFICAR LLUVIAS</h1>
+<form (ngSubmit)="patchLluvia()">
+<input type="text" [(ngModel)]="idPais" placeholder="ingresar id del pais" name="provincia" required>
+<br>
+<input type="text" [(ngModel)]="idProvincia" placeholder="ingresar id de la provincia" name="provincia" required>
+<br>
+<input type="text" [(ngModel)]="idLluvia" placeholder="ingresar id de la lluvia" name="provincia" required>
+<br>
+<input type="number" [(ngModel)]="mm_de_agua" placeholder="ingresar nuevo mm de agua" name="provincia" required>
+<br>
+<input type="date" [(ngModel)]="fecha" placeholder="ingresar nueva fecha" name="provincia" required>
+<br>
+<button type="submit"> mandar </button>
+</form>
+<br>
+    <a routerLink = "/lluvia">volver a lluvia</a>
+    <br>
+    <a routerLink = "/home">volver a home</a>
